@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>网站标题</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">信息页</a></li>
+                    <li><a href="#">关于页</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>主内容区</h2>
+            <!-- 主要内容 -->
+        </main>
+        <footer>
+            <p>版权信息 © 2024</p>
+        </footer>
+    </div>
+</body>
+<style>
+    /* styles.css */
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        /* 使容器至少占满整个视口高度 */
+    }
+
+    header {
+        background: #333;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    header nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav ul li {
+        display: inline;
+        margin-right: 1rem;
+    }
+
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    header nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        flex: 1;
+        /* 主内容区域会自动扩展以填充剩余空间 */
+        padding: 1rem;
+    }
+
+    footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* styles.css (添加在已有 CSS 之后) */
+    @media (max-width: 768px) {
+        header nav ul {
+            text-align: center;
+        }
+
+        header nav ul li {
+            display: block;
+            margin: 0.5rem 0;
+        }
+    }
+</style>
+
+</html>
